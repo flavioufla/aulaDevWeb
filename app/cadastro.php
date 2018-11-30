@@ -60,6 +60,3 @@ class cadastro extends baseClass {
     }
 
 }
-
-$cadastro = new cadastro();
-$cadastro->cadastra_estado();
