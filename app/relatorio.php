@@ -11,7 +11,7 @@ class relatorio extends baseClass {
         SELECT
         tb1.cidade_descricao as cidade,
         ifnull(tb2.bairro_descricao,'Centro') as bairro,
-        ifnull(tb3.endereco_logradouro,'ND') as logradouro,
+        ifnull(tb3.endereco_logradouro,'-') as logradouro,
         ifnull(tb3.endereco_cep,tb1.cidade_cep) as cep
         from
         cep.cidade tb1
